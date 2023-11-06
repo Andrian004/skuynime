@@ -1,8 +1,6 @@
 <template>
   <header class="bg-zinc-800 fixed top-0 w-full z-50">
-    <div
-      class="container mx-auto flex justify-between text-white py-5 px-2 sm:px-0"
-    >
+    <div class="container mx-auto flex justify-between text-white py-5 px-2">
       <h1 class="brand text-2xl font-bold">kuynime</h1>
       <button class="sm:hidden" @click="togle">
         <Icon name="zondicons:menu" color="white" size="2rem" />
