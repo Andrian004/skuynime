@@ -5,6 +5,7 @@ export const useFetching = () => {
   // state
   const res = useState<any>("res", () => []);
   const loading = ref(true);
+  const pagination = useState<any>("pagination", () => {});
 
   // function/action
   const fetchApi = async (path: string, method: any, body?: {}) => {
@@ -15,6 +16,7 @@ export const useFetching = () => {
       });
       loading.value = false;
       res.value = result.data;
+      pagination.value = result.pagination;
     } catch (error: any) {
       res.value = error;
     }
@@ -22,8 +24,9 @@ export const useFetching = () => {
 
   // global state or function
   return {
-    res,
-    loading,
-    fetchApi,
+    res, // state
+    pagination,
+    loading, // state
+    fetchApi, // function
   };
 };

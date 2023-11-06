@@ -13,7 +13,7 @@
         />
         <div class="min-w-0 flex-auto">
           <NuxtLink
-            :to="{ path: `/kelas/${anime.mal_id}` }"
+            :to="{ path: `/popular/${anime.mal_id}` }"
             class="text-sm font-semibold leading-6 text-gray-900"
           >
             {{ anime.title }}

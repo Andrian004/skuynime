@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-20">
+  <div class="container mx-auto mt-20 px-2">
     <h1 class="text-2xl font-medium mb-4">Daftar anime teratas:</h1>
     <hr />
     <div
@@ -10,12 +10,13 @@
     </div>
     <div v-else>
       <CardClass :data="res" />
+      <Pagination :data="pagination" :loading="loading" path="v4/top/anime?" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const { res, loading, fetchApi } = useFetching();
+const { res, loading, pagination, fetchApi } = useFetching();
 
 onMounted(() => {
   // fetchApi(path: string, method: string, body?: {})

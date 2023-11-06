@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="group">
+  <a :href="'/popular/' + anime.mal_id" class="group">
     <div
       class="aspect-video aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
     >
