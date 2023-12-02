@@ -11,7 +11,7 @@
           class="h-12 w-16 flex-none rounded bg-gray-50"
           :src="anime.images.jpg.small_image_url"
           alt="..."
-          loading="lazy"
+          quality="80"
         />
         <div class="min-w-0 flex-auto">
           <NuxtLink

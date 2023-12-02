@@ -8,7 +8,7 @@
         :src="anime.images.jpg.image_url"
         alt="..."
         class="h-full w-full object-cover object-center group-hover:opacity-75"
-        loading="lazy"
+        quality="80"
       />
     </div>
     <h3 class="mt-1 text-lg font-medium text-gray-900">{{ anime.title }}</h3>
