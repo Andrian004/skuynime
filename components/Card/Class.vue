@@ -7,11 +7,9 @@
     >
       <div class="flex min-w-0 gap-x-4">
         <NuxtImg
-          format="webp"
           class="h-12 w-16 flex-none rounded bg-gray-50"
           :src="anime.images.jpg.small_image_url"
-          alt="..."
-          quality="80"
+          alt="image"
         />
         <div class="min-w-0 flex-auto">
           <NuxtLink
