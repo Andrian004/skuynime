@@ -3,10 +3,12 @@
     <div
       class="aspect-video aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7"
     >
-      <img
+      <NuxtImg
+        format="webp"
         :src="anime.images.jpg.image_url"
         alt="..."
         class="h-full w-full object-cover object-center group-hover:opacity-75"
+        loading="lazy"
       />
     </div>
     <h3 class="mt-1 text-lg font-medium text-gray-900">{{ anime.title }}</h3>

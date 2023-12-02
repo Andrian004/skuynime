@@ -6,10 +6,12 @@
       :key="i"
     >
       <div class="flex min-w-0 gap-x-4">
-        <img
+        <NuxtImg
+          format="webp"
           class="h-12 w-16 flex-none rounded bg-gray-50"
           :src="anime.images.jpg.small_image_url"
-          alt=""
+          alt="..."
+          loading="lazy"
         />
         <div class="min-w-0 flex-auto">
           <NuxtLink
